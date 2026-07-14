@@ -243,3 +243,90 @@ section h1{
     border-radius:25px;
     text-decoration:none;
 }
+/* =======================
+   MOBILE RESPONSIVE
+======================= */
+
+@media screen and (max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:15px;
+    }
+
+    nav a{
+        margin:0;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    .hero-content{
+        max-width:100%;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:24px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .profile img{
+        width:220px;
+        height:220px;
+        margin-bottom:25px;
+    }
+
+    .stats{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .project-container{
+        grid-template-columns:1fr;
+    }
+
+    .skill-box{
+        justify-content:center;
+    }
+
+    .social{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .social a,
+    button{
+        width:90%;
+        max-width:280px;
+        text-align:center;
+    }
+
+    section{
+        padding:50px 20px;
+    }
+}
